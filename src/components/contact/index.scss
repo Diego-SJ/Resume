@@ -1,0 +1,13 @@
+@import '../../sass/variables';
+.landing-contact {
+	flex: 1;
+	overflow: auto;
+
+	position: relative;
+}
+
+.contact-info {
+	@media only screen and (max-width: $bp-m) {
+		margin-top: 3rem;
+	}
+}

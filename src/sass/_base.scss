@@ -1,0 +1,81 @@
+@import './variables';
+@import './animations';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%; // 1rem  = 10px
+
+	@media only screen and (max-width: $bp-lg) {
+		font-size: 55%; // 8px
+	}
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	background-color: $dark;
+	display: flex;
+
+	max-height: 100vh;
+	height: 100vh;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	margin: 6rem 2rem !important;
+	animation: moveInBottom 0.8s;
+
+	&-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.title-section {
+	padding-bottom: 3rem;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+	font-size: 1.5rem;
+	border: none;
+	padding: 1.5rem 4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	background-color: $primary;
+	color: $light;
+	cursor: pointer;
+	transition: all 0.2s;
+	text-decoration: none;
+	outline: none;
+
+	&:hover {
+		transform: translateY(-0.4rem);
+		background-color: rgba($primary, 0.7);
+		box-shadow: 0 0 2rem rgba(#000, 0.3);
+	}
+}
+
+.mt-1 {
+	margin-top: 1rem !important;
+}
+
+.mt-2 {
+	margin-top: 1rem !important;
+}

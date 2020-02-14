@@ -1,0 +1,13 @@
+@import '../../sass/variables';
+@import '../../sass/base';
+
+.landing-portfolios {
+	flex: 1;
+	overflow: auto;
+
+	position: relative;
+}
+
+.portfolios-card__wraper {
+	padding: 0 0 0 1rem;
+}

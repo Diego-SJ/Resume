@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+html {
+  font-size: 62.5%; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  background-color: #121420;
+  display: flex;
+  max-height: 100vh;
+  height: 100vh; }
+
+.section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin: 6rem 2rem !important; }
+  .section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-.App-link {
-  color: #61dafb;
-}
+.title-section {
+  padding-bottom: 3rem; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.btn-primary {
+  font-size: 1.5rem;
+  border: none;
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  background-color: #007bff;
+  color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .btn-primary:hover {
+    transform: translateY(-0.4rem);
+    background-color: rgba(0, 123, 255, 0.7);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3); }
+
+.paragraph {
+  font-weight: 300;
+  color: #f8f9fa;
+  font-size: 1.8rem;
+  line-height: 3rem; }
+
+h1 {
+  color: #007bff;
+  margin: 1.5rem 0;
+  font-weight: 400; }
+  h1 > span {
+    color: #f8f9fa; }
+  h1.primary {
+    font-size: 5rem; }
+  h1.secondary {
+    font-size: 3rem; }
+
+.heading-primary {
+  color: #f8f9fa;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative; }
+  .heading-primary::before, .heading-primary::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 5px;
+    background-color: #007bff;
+    border-radius: 100px; }
+  .heading-primary::after {
+    width: 45px;
+    background: #007bff; }
+  .heading-primary::before {
+    width: 120px;
+    background: rgba(0, 123, 255, 0.3); }
