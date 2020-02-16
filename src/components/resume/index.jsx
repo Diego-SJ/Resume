@@ -84,7 +84,7 @@ export default function index() {
 									<li className='time-line__item'>
 										<span className='time-line__date'>Jun 2019 - Present</span>
 										<div className='time-line__content'>
-											<h3>Mobile developer</h3>
+											<h3>Software developer</h3>
 											<h4>Actosoft Community</h4>
 											<p>Mobile application developer, member of the development team.</p>
 											<p>
