@@ -24,7 +24,7 @@ export default function index() {
 						<Row>
 							<Skill title='HTML' percentage='90' />
 							<Skill title='CSS' percentage='85' />
-							<Skill title='Javascript' percentage='85' />
+							<Skill title='JAVASCRIPT' percentage='85' />
 							<Skill title='PHP' percentage='90' />
 							<Skill title='PYTHON' percentage='30' />
 							<Skill title='C ++' percentage='30' />

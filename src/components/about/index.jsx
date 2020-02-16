@@ -40,7 +40,7 @@ export default function index() {
 									</p>
 									<ul className='personal-data'>
 										<li className='personal-data__item'>
-											<b>Full name</b> Juan Diego Salsa
+											<b>Full name</b> Juan Diego Salas Jiménez
 										</li>
 										<li className='personal-data__item'>
 											<b>Age</b> 21

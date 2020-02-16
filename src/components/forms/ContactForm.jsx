@@ -100,6 +100,7 @@ const ContactForm = () => {
 						onChange={(e) => updateDataForm(e)}
 						value={message}
 						className='form__input-ta'
+						required
 					></textarea>
 					<label htmlFor='message'>Enter your message *</label>
 				</div>
