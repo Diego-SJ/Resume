@@ -22,16 +22,15 @@ export default function index() {
 							</Col>
 						</Row>
 						<Row>
-							<Skill title='HTML' percentage='95' />
-							<Skill title='CSS' percentage='90' />
+							<Skill title='HTML' percentage='90' />
+							<Skill title='CSS' percentage='85' />
 							<Skill title='Javascript' percentage='85' />
 							<Skill title='PHP' percentage='90' />
 							<Skill title='PYTHON' percentage='30' />
 							<Skill title='C ++' percentage='30' />
-							<Skill title='PYTHON' percentage='30' />
 							<Skill title='C#' percentage='30' />
 							<Skill title='JAVA' percentage='90' />
-							<Skill title='SQL' percentage='90' />
+							<Skill title='SQL' percentage='85' />
 						</Row>
 					</Container>
 				</section>

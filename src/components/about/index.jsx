@@ -8,7 +8,7 @@ import { ABOUT } from '../../routes/routes';
 require('./index.scss');
 const photo = require('../../img/jdsj2.jpg');
 const urlResume =
-	'https://doc-00-9k-docs.googleusercontent.com/docs/securesc/k6nis5l9louo4iaao9rms232akmf4og9/hllbfa70phna78hbseo8i0eishhctgrh/1581672600000/01177323573579568707/01177323573579568707/1b9hgsPEWtH4Tq7ui47E4hChvRJnJX2Nv?e=download&authuser=1&nonce=us6aga6920vu2&user=01177323573579568707&hash=nur0ci72mj7nc4jggmvmg4kbt0s1uvgn';
+	'https://drive.google.com/uc?id=1b9hgsPEWtH4Tq7ui47E4hChvRJnJX2Nv&export=download';
 
 export default function index() {
 	return (
