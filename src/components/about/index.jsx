@@ -7,10 +7,67 @@ import { ABOUT } from '../../routes/routes';
 // Style
 require('./index.scss');
 const photo = require('../../img/jdsj2.jpg');
-const resume = require('../../assets/files/jdsj.pdf');
 
 export default function index() {
-	const { urlResume, fileName } = [resume, "Juan Diego Salas Jiménez's CV"];
+	const urlResume =
+		'https://drive.google.com/uc?id=13wvRZUTs3Kim_4vQPA4zHMvaGX3G9Jub&export=download';
+
+	const PersonalData = [
+		{
+			id: 1,
+			title: 'Full name',
+			description: 'Juan Diego Salas Jiménez',
+		},
+		{
+			id: 2,
+			title: 'Age',
+			description: '21',
+		},
+		{
+			id: 3,
+			title: 'Birthday',
+			description: '9/12/1998',
+		},
+		{
+			id: 4,
+			title: 'Nationality',
+			description: 'Mexican',
+		},
+		{
+			id: 5,
+			title: 'Languages',
+			description: 'Spanish (Native) - English (A2)',
+		},
+		{
+			id: 6,
+			title: 'Marital status',
+			description: 'Single',
+		},
+	];
+
+	const Services = [
+		{
+			id: 1,
+			icon: 'layers',
+			title: 'Web design',
+			description:
+				'The interface must project the corporate image of the client, its essence and values must be understood beyond placing only the logo.',
+		},
+		{
+			id: 2,
+			icon: 'monitor',
+			title: 'Web development',
+			description:
+				'The optimization of the front-end as the back-end of the site; The objective is to control and optimize the website loading process.',
+		},
+		{
+			id: 3,
+			icon: 'smartphone',
+			title: 'Mobile development',
+			description:
+				'Mobile devices guarantee the practicality we are looking for, so it is necessary that navigation and functionality be designed for mobile phones.',
+		},
+	];
 
 	return (
 		<Fragment>
@@ -40,31 +97,13 @@ export default function index() {
 										Engineering student in Information Technology and Communications.
 									</p>
 									<ul className='personal-data'>
-										<li className='personal-data__item'>
-											<b>Full name</b> Juan Diego Salas Jiménez
-										</li>
-										<li className='personal-data__item'>
-											<b>Age</b> 21
-										</li>
-										<li className='personal-data__item'>
-											<b>Birthday</b> 9/12/1998
-										</li>
-										<li className='personal-data__item'>
-											<b>Nationality</b> Mexican
-										</li>
-										<li className='personal-data__item'>
-											<b>Languages</b> Spanish (Native) - English (A2)
-										</li>
-										<li className='personal-data__item'>
-											<b>Marital status</b> Single
-										</li>
+										{PersonalData.map((data) => (
+											<li key={data.id} className='personal-data__item'>
+												<b>{data.title}</b> {data.description}
+											</li>
+										))}
 									</ul>
-									<a
-										href={urlResume}
-										without
-										className='btn-primary'
-										download={fileName}
-									>
+									<a href={urlResume} without className='btn-primary'>
 										Download resume
 									</a>
 								</div>
@@ -83,27 +122,21 @@ export default function index() {
 							</Col>
 						</Row>
 						<Row>
-							<Col lg={4} md={6} sm={12} style={{ marginBottom: '3rem' }}>
-								<CardService
-									icon='layers'
-									title='Web design'
-									description='The interface must project the corporate image of the client, its essence and values must be understood beyond placing only the logo.'
-								/>
-							</Col>
-							<Col lg={4} md={6} sm={12} style={{ marginBottom: '3rem' }}>
-								<CardService
-									icon='monitor'
-									title='Web development'
-									description='The optimization of the front-end as the back-end of the site; The objective is to control and optimize the website loading process.'
-								/>
-							</Col>
-							<Col lg={4} md={6} sm={12} style={{ marginBottom: '3rem' }}>
-								<CardService
-									icon='smartphone'
-									title='Mobile development'
-									description='Mobile devices guarantee the practicality we are looking for, so it is necessary that navigation and functionality be designed for mobile phones.'
-								/>
-							</Col>
+							{Services.map((service) => (
+								<Col
+									key={service.id}
+									lg={4}
+									md={6}
+									sm={12}
+									style={{ marginBottom: '3rem' }}
+								>
+									<CardService
+										icon={service.icon}
+										title={service.title}
+										description={service.description}
+									/>
+								</Col>
+							))}
 						</Row>
 					</Container>
 				</section>
