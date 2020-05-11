@@ -76,7 +76,7 @@ const Portfolios = () => {
 
 						<Row>
 							{portfolioInfo.map((item) => (
-								<Col lg={4} sm={12} md={6} className='portfolios-card__wraper'>
+								<Col lg={4} sm={12} md={6} xl={3} className='portfolios-card__wraper'>
 									<CardPortfolios
 										id={item.id}
 										image={item.image}
