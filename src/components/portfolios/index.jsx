@@ -14,6 +14,52 @@ const img_p06 = require('../../img/portfolios/cvra.jpg');
 const img_p05 = require('../../img/portfolios/meet.jpg');
 
 const Portfolios = () => {
+	const portfolioInfo = [
+		{
+			id: 1,
+			image: img_p05,
+			link: 'https://github.com/Diego-SJ/Meet',
+			title: 'Meet platform',
+			description: 'Simple social network',
+		},
+		{
+			id: 2,
+			image: img_p06,
+			link: 'https://github.com/Diego-SJ/Resume',
+			title: 'My resume',
+			description: 'My resume online',
+		},
+		{
+			id: 3,
+			image: img_p01,
+			link: 'https://linuspauling2.000webhostapp.com/awl/',
+			title: 'App Web Lecturas',
+			description: 'Platform for Linus Pauling Collage',
+		},
+		{
+			id: 4,
+			image: img_p02,
+			link:
+				'https://github.com/ActoSoft/MexicoTrasciende-Frontend/tree/feature/team_organizer',
+			title: 'Team Organizer',
+			description: 'Module for the “México Trasciende” website',
+		},
+		{
+			id: 5,
+			image: img_p03,
+			link: 'https://github.com/ActoSoft/buntiAppMobile',
+			title: 'BuntiApp',
+			description: 'Mobile app',
+		},
+		{
+			id: 6,
+			image: img_p04,
+			link: null,
+			title: 'BuntiEco GuardianesApp',
+			description: 'Mobile App for Ciclo-Pep',
+		},
+	];
+
 	return (
 		<Fragment>
 			<SlideMenu currentPage={PORTFOLIOS} />
@@ -27,56 +73,19 @@ const Portfolios = () => {
 								</div>
 							</Col>
 						</Row>
+
 						<Row>
-							<Col lg={4} sm={12} md={6} className='portfolios-card__wraper'>
-								<CardPortfolios
-									image={img_p05}
-									link={'https://github.com/Diego-SJ/Meet'}
-									title='Meet platform'
-									description='Simple social network'
-								/>
-							</Col>
-							<Col lg={4} sm={12} md={6} className='portfolios-card__wraper'>
-								<CardPortfolios
-									image={img_p06}
-									link={'https://github.com/Diego-SJ/Resume'}
-									title='Curriculum Vitae'
-									description='Curriculum vitae online'
-								/>
-							</Col>
-							<Col lg={4} sm={12} md={6} className='portfolios-card__wraper'>
-								<CardPortfolios
-									image={img_p01}
-									link={'https://linuspauling2.000webhostapp.com/awl/'}
-									title='App Web Lecturas'
-									description='Platform for Linus Pauling Collage'
-								/>
-							</Col>
-							<Col lg={4} sm={12} md={6} className='portfolios-card__wraper'>
-								<CardPortfolios
-									image={img_p02}
-									link={
-										'https://github.com/ActoSoft/MexicoTrasciende-Frontend/tree/feature/team_organizer'
-									}
-									title='Team Organizer'
-									description='Module for the “México Trasciende” website'
-								/>
-							</Col>
-							<Col lg={4} sm={12} md={6} className='portfolios-card__wraper'>
-								<CardPortfolios
-									image={img_p03}
-									link={'https://github.com/ActoSoft/buntiAppMobile'}
-									title='BuntiApp'
-									description='Mobile app'
-								/>
-							</Col>
-							<Col lg={4} sm={12} md={6} className='portfolios-card__wraper'>
-								<CardPortfolios
-									image={img_p04}
-									title='Eco Guardianes'
-									description='Mobile App for Ciclo-Pep'
-								/>
-							</Col>
+							{portfolioInfo.map((item) => (
+								<Col lg={4} sm={12} md={6} className='portfolios-card__wraper'>
+									<CardPortfolios
+										id={item.id}
+										image={item.image}
+										title={item.title}
+										description={item.description}
+										link={item.link !== null ? item.link : null}
+									/>
+								</Col>
+							))}
 						</Row>
 					</Container>
 				</section>
