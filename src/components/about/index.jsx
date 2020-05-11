@@ -7,10 +7,11 @@ import { ABOUT } from '../../routes/routes';
 // Style
 require('./index.scss');
 const photo = require('../../img/jdsj2.jpg');
-const urlResume =
-	'https://drive.google.com/uc?id=1b9hgsPEWtH4Tq7ui47E4hChvRJnJX2Nv&export=download';
+const resume = require('../../assets/files/jdsj.pdf');
 
 export default function index() {
+	const { urlResume, fileName } = [resume, "Juan Diego Salas Jiménez's CV"];
+
 	return (
 		<Fragment>
 			<SlideMenu currentPage={ABOUT} />
@@ -60,12 +61,11 @@ export default function index() {
 									</ul>
 									<a
 										href={urlResume}
-										target='_blank'
 										without
-										rel='noopener noreferrer'
 										className='btn-primary'
+										download={fileName}
 									>
-										Download CV
+										Download resume
 									</a>
 								</div>
 							</Col>

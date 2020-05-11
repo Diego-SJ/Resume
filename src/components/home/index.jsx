@@ -9,6 +9,8 @@ require('./index.scss');
 const videoParticles = require('../../img/particles.mp4');
 
 const Home = () => {
+	const { email, phone } = ['dsalas035@gmail.com', '+527714152997'];
+
 	return (
 		<Fragment>
 			<SlideMenu currentPage={HOME} />
@@ -26,22 +28,22 @@ const Home = () => {
 					</h1>
 					<div className='welcome-message__secondary'>
 						<p className='paragraph'>
-							Join the IT area of a company to expand my knowledge about hardware and
-							software. Contribute positively with the IT area to improve processes
-							within the company.
+							Being part of a company where I can put into practice all my knowledge,
+							to give me the opportunity to reach all my goals set, and that offers me
+							the opportunity to grow in the area work, personal and intellectual.
 						</p>
 					</div>
 					<div className='welcome-message__social'>
 						<ul className='social'>
 							<li className='social-item'>
-								<Link to={CONTACT} className='social-item__content'>
+								<a href={`mailto:${email}`} className='social-item__content'>
 									<Icon icon='at-sign' className='social-item__icon' />
-								</Link>
+								</a>
 							</li>
 							<li className='social-item'>
-								<Link to={CONTACT} className='social-item__content'>
+								<a href={`tel:${phone}`} className='social-item__content'>
 									<Icon icon='phone' className='social-item__icon' />
-								</Link>
+								</a>
 							</li>
 							<li className='social-item'>
 								<a
