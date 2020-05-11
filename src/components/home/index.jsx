@@ -9,7 +9,7 @@ require('./index.scss');
 const videoParticles = require('../../img/particles.mp4');
 
 const Home = () => {
-	const { email, phone } = ['dsalas035@gmail.com', '+527714152997'];
+	const { phone } = ['+527714152997'];
 
 	return (
 		<Fragment>
@@ -36,12 +36,17 @@ const Home = () => {
 					<div className='welcome-message__social'>
 						<ul className='social'>
 							<li className='social-item'>
-								<a href={`mailto:${email}`} className='social-item__content'>
+								<Link to={CONTACT} className='social-item__content'>
 									<Icon icon='at-sign' className='social-item__icon' />
-								</a>
+								</Link>
 							</li>
 							<li className='social-item'>
-								<a href={`tel:${phone}`} className='social-item__content'>
+								<a
+									href={`tel:${phone}`}
+									className='social-item__content'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
 									<Icon icon='phone' className='social-item__icon' />
 								</a>
 							</li>
