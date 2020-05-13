@@ -10,7 +10,7 @@ const photo = require('../../img/jdsj2.jpg');
 
 export default function index() {
 	const linkResume =
-		'https://drive.google.com/uc?id=13wvRZUTs3Kim_4vQPA4zHMvaGX3G9Jub&export=download';
+		'https://drive.google.com/uc?id=1HDzkcRuFCh6wMBJJ87oNO3kAsFszrT6x&export=download';
 
 	const PersonalData = [
 		{
