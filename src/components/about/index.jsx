@@ -9,7 +9,7 @@ require('./index.scss');
 const photo = require('../../img/jdsj2.jpg');
 
 export default function index() {
-	const urlResume =
+	const linkResume =
 		'https://drive.google.com/uc?id=13wvRZUTs3Kim_4vQPA4zHMvaGX3G9Jub&export=download';
 
 	const PersonalData = [
@@ -103,7 +103,7 @@ export default function index() {
 											</li>
 										))}
 									</ul>
-									<a href={urlResume} without className='btn-primary'>
+									<a href={linkResume} without className='btn-primary'>
 										Download resume
 									</a>
 								</div>
