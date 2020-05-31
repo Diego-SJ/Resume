@@ -3,15 +3,13 @@ import SlideMenu from '../layout/SlideMenu';
 import CardService from '../cards/CardService';
 import { Container, Row, Col } from 'react-grid-system';
 import { ABOUT } from '../../routes/routes';
+import urlResume from '../../utils/Juan Diego Salas Jimenez.pdf';
 
 // Style
 require('./index.scss');
 const photo = require('../../img/jdsj2.jpg');
 
 export default function index() {
-	const linkResume =
-		'https://drive.google.com/uc?id=1HDzkcRuFCh6wMBJJ87oNO3kAsFszrT6x&export=download';
-
 	const PersonalData = [
 		{
 			id: 1,
@@ -103,7 +101,13 @@ export default function index() {
 											</li>
 										))}
 									</ul>
-									<a href={linkResume} without className='btn-primary'>
+									<a
+										href={urlResume}
+										target='_blank'
+										rel='noopener noreferrer'
+										className='btn-primary'
+										download
+									>
 										Download resume
 									</a>
 								</div>
