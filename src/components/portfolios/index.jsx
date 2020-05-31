@@ -25,7 +25,7 @@ const Portfolios = () => {
 			image: img_p11,
 			link: 'https://github.com/Diego-SJ/PaleteriaChuchin',
 			title: 'Paleteria Chuchin',
-			description: 'Desktop application with Electron, React and Fireabse',
+			description: 'Desktop application with Electron, React and Firebase',
 		},
 		{
 			id: 1,
@@ -79,13 +79,6 @@ const Portfolios = () => {
 		},
 		{
 			id: 10,
-			image: img_p10,
-			link: 'https://diego-sj.github.io/Natours-With-Sass/',
-			title: 'Natours landing page',
-			description: 'Landing page with Sass (no responsive)',
-		},
-		{
-			id: 11,
 			image: img_p10,
 			link: 'https://diego-sj.github.io/Natours-With-Sass/',
 			title: 'Natours landing page',

@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
-import SlideMenu from '../layout/SlideMenu';
-import CardService from '../cards/CardService';
 import { Container, Row, Col } from 'react-grid-system';
 import { ABOUT } from '../../routes/routes';
+import SlideMenu from '../layout/SlideMenu';
+import CardService from '../cards/CardService';
+import DownloadLink from 'react-download-link';
 import urlResume from '../../utils/Juan Diego Salas Jimenez.pdf';
 
 // Style
@@ -101,15 +102,12 @@ export default function index() {
 											</li>
 										))}
 									</ul>
-									<a
-										href={urlResume}
-										target='_blank'
-										rel='noopener noreferrer'
+									<DownloadLink
+										label='Download resume'
 										className='btn-primary'
-										download
-									>
-										Download resume
-									</a>
+										filename={urlResume}
+										exportFile={() => 'My cached data'}
+									/>
 								</div>
 							</Col>
 						</Row>
