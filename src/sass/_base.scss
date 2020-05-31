@@ -59,11 +59,11 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.3rem;
 	background-color: $primary;
-	color: $light;
+	color: $light !important;
 	cursor: pointer;
 	transition: all 0.2s;
-	text-decoration: none;
-	outline: none;
+	text-decoration: none !important;
+	outline: none !important;
 
 	&:hover {
 		transform: translateY(-0.4rem);
