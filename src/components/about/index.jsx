@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-grid-system';
 import { ABOUT } from '../../routes/routes';
 import SlideMenu from '../layout/SlideMenu';
@@ -69,7 +70,7 @@ export default function index() {
 	];
 
 	return (
-		<Fragment>
+		<>
 			<SlideMenu currentPage={ABOUT} />
 			<div className='landing-about'>
 				<section className='section'>
@@ -102,12 +103,16 @@ export default function index() {
 											</li>
 										))}
 									</ul>
-									<DownloadLink
-										label='Download resume'
+									<Link
+										to='!#'
 										className='btn-primary'
-										filename={urlResume}
-										exportFile={() => 'My cached data'}
-									/>
+										onClick={(event) => {
+											event.preventDefault();
+											window.open(urlResume);
+										}}
+									>
+										Download resume
+									</Link>
 								</div>
 							</Col>
 						</Row>
@@ -143,6 +148,6 @@ export default function index() {
 					</Container>
 				</section>
 			</div>
-		</Fragment>
+		</>
 	);
 }
