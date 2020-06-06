@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import Icon from '../../components/Icon';
+import Icon from '../../components/Icon';
 import SlideMenu from '../../layouts/SlideMenu';
 import { CONTACT, LINKEDIN, GITHUB, HOME } from '../../routes/routes';
 
@@ -36,7 +36,7 @@ export default function Home() {
 						<ul className='social'>
 							<li className='social-item'>
 								<Link to={CONTACT} className='social-item__content'>
-									{/* <Icon icon='at-sign' className='social-item__icon' /> */}
+									<Icon icon='at-sign' className='social-item__icon' />
 								</Link>
 							</li>
 							<li className='social-item'>
@@ -46,7 +46,7 @@ export default function Home() {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									{/* <Icon icon='phone' className='social-item__icon' /> */}
+									<Icon icon='phone' className='social-item__icon' />
 								</a>
 							</li>
 							<li className='social-item'>
@@ -56,7 +56,7 @@ export default function Home() {
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									{/* <Icon icon='linkedin' className='social-item__icon' /> */}
+									<Icon icon='linkedin' className='social-item__icon' />
 								</a>
 							</li>
 							<li className='social-item'>
