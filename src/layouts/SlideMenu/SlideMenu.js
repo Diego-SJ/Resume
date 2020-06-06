@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HOME, ABOUT, RESUME, PORTFOLIO, CONTACT } from '../../routes/routes';
-import Icon from '../../components/Icon';
+import Icon from '../../components/Ico';
 
 import './SlideMenu.scss';
 import photo from '../../assets/img/profile/jdsj.png';

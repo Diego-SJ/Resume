@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Icon from '../../components/Icon/index';
+import Icon from '../../components/Ico';
 import SlideMenu from '../../layouts/SlideMenu';
 import { CONTACT, LINKEDIN, GITHUB, HOME } from '../../routes/routes';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Col } from 'react-grid-system';
 import ModalBasic from '../../Modal';
 import useModal from 'use-react-modal';
-import Icon from '../../Icon';
+import Icon from '../../Ico';
 
 import './CardPortfolio.scss';
 
