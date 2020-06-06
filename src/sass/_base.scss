@@ -33,21 +33,11 @@ body {
 	height: 100vh;
 }
 
-.section {
-	display: flex;
-	flex-direction: column;
-	margin: 6rem 2rem !important;
-	animation: moveInBottom 0.8s;
+.landing {
+	flex: 1;
+	overflow: auto;
 
-	&-content {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-}
-
-.title-section {
-	padding-bottom: 3rem;
+	position: relative;
 }
 
 .btn-primary,
