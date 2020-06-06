@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SlideMenu from '../../layouts/SlideMenu';
 import Icon from '../../components/Icon';
+import SlideMenu from '../../layouts/SlideMenu';
 import { CONTACT, LINKEDIN, GITHUB, HOME } from '../../routes/routes';
 
 import './Home.scss';
